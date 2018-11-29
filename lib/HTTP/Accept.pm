@@ -75,7 +75,7 @@ sub _parse_string {
 
 =head1 SYNOPSIS
 
-    use HTTP::Acceptg;
+    use HTTP::Accept;
     
     my $header         = 'text/html, application/json;q=0.5';
     my $accept_header  = HTTP::Accept->new( $header );
