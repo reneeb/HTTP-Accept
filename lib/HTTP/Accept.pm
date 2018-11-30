@@ -2,7 +2,7 @@ package HTTP::Accept;
 
 # ABSTRACT: Parse the HTTP header 'Accept'
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Moo;
 
