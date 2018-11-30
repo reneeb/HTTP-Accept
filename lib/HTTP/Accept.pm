@@ -42,18 +42,18 @@ sub match {
 }
 
 around BUILDARGS => sub {
-  my ($orig, $class, @args) = @_;
+    my ($orig, $class, @args) = @_;
  
-  return { string => $args[0] }
-    if @args == 1 && !ref $args[0];
+    return { string => $args[0] }
+        if @args == 1 && !ref $args[0];
  
-  return $class->$orig(@args);
+    return $class->$orig(@args);
 };
 
 sub _parse_string {
     my ($self) = @_;
 
-    my @accepts = split /\s*,\s*/, $self->string;
+    my @accepts = split /\s*,\s*/, $self->string // '';
     my %weighted;
 
     for my $accept ( @accepts ) {
