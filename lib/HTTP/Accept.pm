@@ -96,7 +96,7 @@ The given media types in the prioritized order.
   Header                            | Values
   ----------------------------------+----------------------------
   text/html, application/json;q=0.5 | text/html, application/json
-  application/json;q=0.5, text/html | text/html, application/*
+  application/json;q=0.5, text/html | text/html, application/json
   application/*;q=0.5, text/html    | text/html, application/*
   */*                               | */*
 
